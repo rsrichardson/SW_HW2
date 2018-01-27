@@ -1,12 +1,22 @@
 public class BeerSong {
-    
+
+    static int numOfBottles = 99;
+
+    public static void Ninty_Nine_Bottles_of_Beer()
+    {
+        while(numOfBottles != 1)
+        {
+            System.out.println(numOfBottles + " bottles of beer on the wall, " +numOfBottles +" bottles	of beer");
+            numOfBottles--;
+            System.out.println("take one down, pass it around, " + numOfBottles + " bottles of beer on the wall");
+        }
+        System.out.println("1 bottle of beer on the wall, 1 bottle of beer");
+        System.out.println("take one down, pass it around, no more bottles of beer on the wall.");
+    }
+
     public static void main(String[] args)
     {
-        
+        Ninty_Nine_Bottles_of_Beer();
     }
-    
-    public void Ninty_Nine_Bottles_of_Beer()
-    {
-        
-    }
+
 }
